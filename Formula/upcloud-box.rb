@@ -11,6 +11,7 @@ class UpcloudBox < Formula
 
   def install
     bin.install "upcloud-box"
+    generate_completions_from_executable(bin/"upcloud-box", "completion")
   end
 
   test do
