@@ -1,9 +1,9 @@
 class UpcloudBox < Formula
   desc "Provision and deploy a secure Docker host on UpCloud"
   homepage "https://github.com/suruaku/upcloud-box"
-  url "https://github.com/suruaku/upcloud-box/releases/download/v1.0.0/upcloud-box_v1.0.0_darwin_arm64.tar.gz"
-  version "1.0.0"
-  sha256 "dec660714221fe1943571726d2278ab0ff2036cf261e04a499546762a9084362"
+  url "https://github.com/suruaku/upcloud-box/releases/download/v1.0.1/upcloud-box_v1.0.1_darwin_arm64.tar.gz"
+  version "1.0.1"
+  sha256 "7c5a759946e9afaf0c1965ce76d12c91e7566fe0841f5f5ebcf5a2ceaa581b10"
   license "MIT"
 
   depends_on arch: :arm64
@@ -16,6 +16,6 @@ class UpcloudBox < Formula
 
   test do
     output = shell_output("#{bin}/upcloud-box --version")
-    assert_match "v1.0.0", output
+    assert_match "v1.0.1", output
   end
 end
