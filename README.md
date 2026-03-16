@@ -1,12 +1,12 @@
 # homebrew-tap
 
-Homebrew tap for `upcloud-box`.
+Homebrew tap for `upcloud-app-platform`.
 
 ## Install
 
 ```bash
 brew tap suruaku/tap
-brew install upcloud-box
+brew install upcloud-app-platform
 ```
 
 ## Supported platform

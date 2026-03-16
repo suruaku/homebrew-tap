@@ -14,4 +14,4 @@ jobs:
       - name: Audit formula
         run: |
           brew tap suruaku/tap "$GITHUB_WORKSPACE"
-          brew audit --formula suruaku/tap/upcloud-box
+          brew audit --formula suruaku/tap/upcloud-app-platform
