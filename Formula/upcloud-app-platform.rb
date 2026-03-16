@@ -10,7 +10,7 @@ class UpcloudAppPlatform < Formula
   depends_on :macos
 
   def install
-    bin.install "upcloud-box" => "upcloud-app-platform"
+    bin.install "upcloud-app-platform"
     generate_completions_from_executable(bin/"upcloud-app-platform", "completion")
   end
 
