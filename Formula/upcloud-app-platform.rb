@@ -1,9 +1,9 @@
 class UpcloudAppPlatform < Formula
   desc "Deploy and operate apps on UpCloud PaaS"
   homepage "https://github.com/suruaku/upcloud-app-platform"
-  url "https://github.com/suruaku/upcloud-app-platform/releases/download/v2.0.5/upcloud-app-platform_v2.0.5_darwin_arm64.tar.gz"
-  version "2.0.5"
-  sha256 "d269c92aef434f3514ad33d81041a809bde373be48eac647b6f0e2834b1127ca"
+  url "https://github.com/suruaku/upcloud-app-platform/releases/download/v2.0.6/upcloud-app-platform_v2.0.6_darwin_arm64.tar.gz"
+  version "2.0.6"
+  sha256 "a9859db2bcada55d661c290a252b8c2c23527ada42d3095ba8680b87102beb72"
   license "MIT"
 
   depends_on arch: :arm64
@@ -16,6 +16,6 @@ class UpcloudAppPlatform < Formula
 
   test do
     output = shell_output("#{bin}/upcloud-app-platform --version")
-    assert_match "v2.0.5", output
+    assert_match "v2.0.6", output
   end
 end
